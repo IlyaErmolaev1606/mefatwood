@@ -1,41 +1,44 @@
+// src/pages/Home.js
 import React from 'react';
 import Header from '../components/Header';
-import ImageSlider from '../components/ImageSlider';
 import Footer from '../components/Footer';
+import ImageSlider from '../components/ImageSlider';
 import './Home.css';
 
-const images = [
-  // Здесь будут пути к изображениям ваших продуктов
-  'images/image1.png',
+// Замените эти изображения на реальные изображения ваших продуктов
+const sliderImages = [
+  '/images/image1.png',
   'images/image2.png',
-  'images/image3.jpg'
+  '/images/image3.jpg'
 ];
 
 function Home() {
   return (
     <div className="home">
       <Header />
-      <ImageSlider images={images} />
+      <ImageSlider images={sliderImages} />
+
       <section id="parquet" className="category">
-        {/* Тут будет содержимое для категории Паркет */}
+        <h2>Паркет</h2>
+        <p>Описание паркета...</p>
+        {/* Здесь можно добавить дополнительные изображения или содержимое */}
       </section>
+
       <section id="countertops" className="category">
-        {/* Тут будет содержимое для категории Столешницы */}
+        <h2>Столешницы</h2>
+        <p>Описание столешниц...</p>
+        {/* Здесь можно добавить дополнительные изображения или содержимое */}
       </section>
+
       <section id="tables" className="category">
-        {/* Тут будет содержимое для категории Столы */}
+        <h2>Столы</h2>
+        <p>Описание столов...</p>
+        {/* Здесь можно добавить дополнительные изображения или содержимое */}
       </section>
+
       <Footer />
     </div>
   );
 }
 
-// function CategorySection({ id, title, description, image }) {
-//   return (
-//     <section id={id} className="category">
-//       <h2>{title}</h2>
-//       <p>{description}</p>
-//       <img src={image} alt={title} />
-//     </section>
-//   );
-// }
+export default Home;

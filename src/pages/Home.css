@@ -1,8 +1,14 @@
 .category {
-  margin-top: 100px; /* Отступ, чтобы контент не перекрывался шапкой */
-  padding: 2rem;
+  padding: 20px;
+  margin-top: 20px;
 }
 
-.home {
-  padding-top: 60px; /* Отступ для всей страницы, чтобы контент не перекрывался шапкой */
+.category h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.category p {
+  font-size: 16px;
+  color: #666;
 }
