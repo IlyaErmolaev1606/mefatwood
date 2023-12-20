@@ -1,14 +1,18 @@
-// src/components/Header.js
 import React from 'react';
-import styles from './Header.module.css'; // Импорт стилей
+import './Header.css';
 
 function Header() {
-    return (
-        <header className={styles.header}>
-            <h1>MEFAT Wood</h1>
-            {/* Место для навигационного меню */}
-        </header>
-    );
+  return (
+    <header className="header">
+      <div className="logo">MEFAT WOOD</div>
+      <nav className="navigation">
+        <div className="menu-icon">☰</div>
+        <div className="menu">
+          <a href="#parquet">Паркет</a>
+          <a href="#countertops">Столешницы</a>
+          <a href="#tables">Столы</a>
+        </div>
+      </nav>
+    </header>
+  );
 }
-
-export default Header;
