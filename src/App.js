@@ -9,14 +9,15 @@ function App() {
     return (
         <Router>
             <div className="App">
-                <Header />
-                <main>
-                    <Switch>
-                        <Route exact path="/" component={Home} />
-                        {/* Добавьте дополнительные маршруты здесь */}
-                    </Switch>
-                </main>
-                <Footer />
+                <Home />
+                    <Header />
+                    <main>
+                        <Switch>
+                            <Route exact path="/" component={Home} />
+                            {/* Добавьте дополнительные маршруты здесь */}
+                        </Switch>
+                    </main>
+                    <Footer />
             </div>
         </Router>
     );

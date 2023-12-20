@@ -5,8 +5,8 @@ body {
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #FFF8DC; /* фоновый цвет ореха */
-    color: #333; /* основной цвет текста */
+    background-color: #FFF8DC; 
+    color: #333; 
   }
   
   code {
