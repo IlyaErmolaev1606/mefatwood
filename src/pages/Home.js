@@ -6,9 +6,9 @@ import './Home.css';
 
 const images = [
   // Здесь будут пути к изображениям ваших продуктов
-  '/path-to-your-image1.jpg',
-  '/path-to-your-image2.jpg',
-  '/path-to-your-image3.jpg'
+  'C:/Users/79090/OneDrive/Documents/MefatWood/mefatwood/src/assets/image1.png',
+  'C:/Users/79090/OneDrive/Documents/MefatWood/mefatwood/src/assets/image2.png',
+  'C:/Users/79090/OneDrive/Documents/MefatWood/mefatwood/src/assets/image3.png'
 ];
 
 function Home() {
