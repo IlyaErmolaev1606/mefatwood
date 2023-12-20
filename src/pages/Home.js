@@ -6,9 +6,9 @@ import './Home.css';
 
 const images = [
   // Здесь будут пути к изображениям ваших продуктов
-  'C:/Users/79090/OneDrive/Documents/MefatWood/mefatwood/src/assets/image1.png',
-  'C:/Users/79090/OneDrive/Documents/MefatWood/mefatwood/src/assets/image2.png',
-  'C:/Users/79090/OneDrive/Documents/MefatWood/mefatwood/src/assets/image3.png'
+  'images/image1.png',
+  'images/image2.png',
+  'images/image3.jpg'
 ];
 
 function Home() {
@@ -30,12 +30,12 @@ function Home() {
   );
 }
 
-function CategorySection({ id, title, description, image }) {
-  return (
-    <section id={id} className="category">
-      <h2>{title}</h2>
-      <p>{description}</p>
-      <img src={image} alt={title} />
-    </section>
-  );
-}
+// function CategorySection({ id, title, description, image }) {
+//   return (
+//     <section id={id} className="category">
+//       <h2>{title}</h2>
+//       <p>{description}</p>
+//       <img src={image} alt={title} />
+//     </section>
+//   );
+// }
