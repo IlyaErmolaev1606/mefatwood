@@ -1,11 +1,21 @@
 import React from 'react';
 import Header from '../components/Header';
+import ImageSlider from '../components/ImageSlider';
+import Footer from '../components/Footer';
 import './Home.css';
+
+const images = [
+  // Здесь будут пути к изображениям ваших продуктов
+  '/path-to-your-image1.jpg',
+  '/path-to-your-image2.jpg',
+  '/path-to-your-image3.jpg'
+];
 
 function Home() {
   return (
     <div className="home">
       <Header />
+      <ImageSlider images={images} />
       <section id="parquet" className="category">
         {/* Тут будет содержимое для категории Паркет */}
       </section>
@@ -15,16 +25,17 @@ function Home() {
       <section id="tables" className="category">
         {/* Тут будет содержимое для категории Столы */}
       </section>
+      <Footer />
     </div>
   );
 }
 
-// src/pages/Home.css
-.category {
-  margin-top: 100px; /* Отступ, чтобы контент не перекрывался шапкой */
-  padding: 2rem;
-}
-
-.home {
-  padding-top: 60px; /* Отступ для всей страницы, чтобы контент не перекрывался шапкой */
+function CategorySection({ id, title, description, image }) {
+  return (
+    <section id={id} className="category">
+      <h2>{title}</h2>
+      <p>{description}</p>
+      <img src={image} alt={title} />
+    </section>
+  );
 }
