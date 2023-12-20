@@ -1,6 +1,6 @@
 .header {
-    background-color: #8B4513; /* цвет кофе с молоком */
-    color: #FFF8DC; /* цвет ореха */
+    background-color: #8B4513; 
+    color: #FFF8DC; 
     display: flex;
     justify-content: space-between;
     align-items: center;

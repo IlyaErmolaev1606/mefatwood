@@ -1,12 +1,13 @@
+// src/components/Footer.js
 import React from 'react';
-import styles from './Footer.module.css'; // Подразумевается, что стили уже созданы
+import './Footer.css';
 
 function Footer() {
-    return (
-        <footer className={styles.footer}>
-            <p>© 2023 MEFAT Wood. All rights reserved.</p>
-        </footer>
-    );
+  return (
+    <footer className="footer">
+      <p>© 2023 MEFAT WOOD - Все права защищены</p>
+    </footer>
+  );
 }
 
 export default Footer;
